@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  /* Sophisticated Dark Palette */
+  --color-brand-primary: #c5a47e; /* Sophisticated Gold */
+  --color-brand-secondary: #a38562; /* Muted Gold */
+  --color-brand-accent: #c5a47e;
+
+  /* Overriding standard utilities for the theme */
+  --color-white: #111111; /* Card Background */
+  --color-gray-50: #080808; /* App Background */
+  --color-gray-100: rgba(255, 255, 255, 0.05); /* Very Subtle Borders */
+  --color-gray-200: rgba(255, 255, 255, 0.1); /* Subtle Borders */
+  --color-gray-900: #e2e2e2; /* Primary Text */
+  --color-gray-700: #b0b0b0; /* Secondary Text */
+  --color-gray-600: #888888; /* Muted Text */
+  --color-gray-500: #666666; /* Very Muted Text */
+  --color-gray-400: #444444; /* Borders/Muted Text */
+
+  /* Category Specific Colors - Shifted for Dark Theme */
+  --color-cat-classifieds: #1e3a8a;
+  --color-cat-produce: #064e3b;
+  --color-cat-cars: #78350f;
+  --color-cat-services: #4c1d95;
+  --color-cat-borehole: #0c4a6e;
+  --color-cat-agri: #422006;
+  --color-cat-business: #7f1d1d;
+
+  --radius-xl: 0rem; /* Sharp, sophisticated edges */
+  --radius-2xl: 0rem;
+  --radius-3xl: 0rem;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans antialiased;
+    letter-spacing: 0.02em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-light tracking-tight;
+  }
+}
+
+.zim-pattern {
+  background-image: 
+    linear-gradient(rgba(197, 164, 126, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(197, 164, 126, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 1;
+}
+
+/* Custom Sophisticated Utilities */
+.border-gold {
+  border: 1px solid rgba(197, 164, 126, 0.2);
+}
+
+.text-gold {
+  color: #c5a47e;
+}
+
+.bg-charcoal {
+  background-color: #111111;
+}

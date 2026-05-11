@@ -1,0 +1,112 @@
+import { Listing, Province } from './types';
+
+export const MOCK_LISTINGS: Listing[] = [
+  {
+    id: '1',
+    title: 'Brand New Toyota Hilux GD-6 2024 Black Edition',
+    description: 'Fresh import, full leather interior, 0km, duty paid. Negotiable.',
+    priceUsd: 58500,
+    priceZig: 789750,
+    category: 'cars',
+    subCategory: 'SUVs & 4x4s',
+    location: { province: 'Harare', city: 'Harare', suburb: 'Avondale' },
+    seller: { id: 's1', name: 'Zim Motors', type: 'dealer', verified: true, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1594731802114-035392ec7092?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: true
+  },
+  {
+    id: '2',
+    title: 'Fresh Tomatoes - Bulk Supply Available',
+    description: 'Grade A tomatoes harvested today. Delivery available in Harare.',
+    priceUsd: 12,
+    priceZig: 162,
+    category: 'produce',
+    subCategory: 'Vegetables',
+    location: { province: 'Mashonaland East', city: 'Marondera' },
+    seller: { id: 's2', name: 'Moyo Farms', type: 'farmer', verified: true, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1546473427-e1e6955773ad?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: true
+  },
+  {
+    id: '3',
+    title: 'Professional Home Plumbing Services',
+    description: 'Expert plumbers for all your home needs. Borehole pump installation.',
+    priceUsd: 45,
+    category: 'services',
+    subCategory: 'Plumbing',
+    location: { province: 'Bulawayo', city: 'Bulawayo' },
+    seller: { id: 's3', name: 'City Plumbers', type: 'business', verified: false, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: true
+  },
+  {
+    id: '4',
+    title: 'Samsung Galaxy S24 Ultra 512GB - Sealed',
+    description: 'Original sealed Samsung S24 Ultra. Valid warranty.',
+    priceUsd: 950,
+    priceZig: 12825,
+    category: 'classifieds',
+    subCategory: 'Electronics',
+    location: { province: 'Harare', city: 'Harare', suburb: 'Borrowdale' },
+    seller: { id: 's4', name: 'Tendai M.', type: 'private', verified: true, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1610945415295-d9baf060e871?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: true
+  },
+  {
+    id: '5',
+    title: 'Borehole Drilling Package - 40m Guaranteed',
+    description: 'Full borehole drilling package including casing and pump installation.',
+    priceUsd: 1200,
+    category: 'water',
+    subCategory: 'Borehole Drilling',
+    location: { province: 'Harare', city: 'Harare', suburb: 'Greendale' },
+    seller: { id: 's5', name: 'WaterSafe ZW', type: 'business', verified: true, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1621905252507-b35222028781?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: false
+  },
+  {
+    id: '6',
+    title: 'John Deere 5050D Tractor - High Condition',
+    description: 'Well-maintained tractor, 50HP, agricultural masterpiece.',
+    priceUsd: 12500,
+    category: 'agriculture',
+    subCategory: 'Tractors & Farm Vehicles',
+    location: { province: 'Mashonaland West', city: 'Chinhoyi' },
+    seller: { id: 's6', name: 'Farm Equipment Ltd', type: 'business', verified: true, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1594913785162-e67898ead08e?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: false
+  },
+  {
+    id: '7',
+    title: 'Modern Coffee Shop for Sale - Harare CBD',
+    description: 'Fully equipped coffee shop in prime location. Loyal customer base.',
+    priceUsd: 15000,
+    category: 'business',
+    subCategory: 'Food & Beverages',
+    location: { province: 'Harare', city: 'Harare', suburb: 'CBD' },
+    seller: { id: 's7', name: 'ShopBroker', type: 'business', verified: false, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1501339817302-ee4f80802ed1?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: false
+  },
+  {
+    id: '8',
+    title: 'Second Hand Sofa Set - 5 Seater',
+    description: 'Genuine leather, deep brown, very comfortable.',
+    priceUsd: 450,
+    priceZig: 6075,
+    category: 'classifieds',
+    subCategory: 'Furniture',
+    location: { province: 'Bulawayo', city: 'Bulawayo' },
+    seller: { id: 's8', name: 'James P.', type: 'private', verified: false, whatsapp: '263770000000' },
+    images: ['https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&fit=crop'],
+    createdAt: new Date().toISOString(),
+    isFeatured: false
+  }
+];
